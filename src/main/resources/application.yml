@@ -1,0 +1,9 @@
+spring:
+    application:
+      name: dedomena_st
+    web:
+      resources:
+        static-locations: classpath:/static/
+server:
+  port: 30333
+

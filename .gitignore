@@ -1,0 +1,17 @@
+.idea/
+/build
+build/
+*/build/
+*/*/build/
+*/*/*/build/
+/out
+out/
+*/out/
+*/*/out/
+*/*/*/out/
+/.gradle
+.gradle/
+*/.gradle/
+*/*/.gradle/
+*/*/*/.gradle/
+
