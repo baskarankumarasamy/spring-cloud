@@ -3,11 +3,11 @@ version: 0.2
 phases:
   build:
     commands:
-      - eco Build Started on 'date'
+      - echo Build started on `date`
       - mvnw test
   post_build:
     commands:
-      - eco Build Completed on 'date'
+      - echo Build Completed on `date`
       - mvnw package
 artifacts:
   files:
