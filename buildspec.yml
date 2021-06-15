@@ -3,8 +3,12 @@ version: 0.2
 phases:
   build:
     commands:
-      - gradlew clean build -x test
+      - eco Build Started on 'date'
+      - mvnw test
+  post_build:
+    commands:
+      - eco Build Completed on 'date'
+      - mvnw package
 artifacts:
   files:
-    - 'Dockerfile'
-    - 'build/libs/spring-cloud-inegration-1.0-SNAPSHOT'
+    - 'target/spring-cloud-inegration-0.0.1-SNAPSHOT.jar'
