@@ -4,11 +4,11 @@ phases:
   build:
     commands:
       - echo Build started on `date`
-      - mvnw test
+      - mvn test
   post_build:
     commands:
       - echo Build Completed on `date`
-      - mvnw package
+      - mvn package
 artifacts:
   files:
     - 'target/spring-cloud-inegration-0.0.1-SNAPSHOT.jar'
