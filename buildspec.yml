@@ -10,10 +10,10 @@ phases:
       - echo Build Completed on `date`
       - mvn package
 artifacts:
-  files:
-    - 'target/spring-cloud-inegration-0.0.1-SNAPSHOT.jar'
-  #discard-paths: yes
   #files:
-  #  - target/*
-  #  - scripts/*
-  #  - appspec.yml
+    #- 'target/spring-cloud-inegration-0.0.1-SNAPSHOT.jar'
+  discard-paths: yes
+  files:
+    - target/*
+    - scripts/*
+    - appspec.yml
