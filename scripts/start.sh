@@ -1,5 +1,3 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
-cd /home/ec2-user/server
-sudo /usr/bin/java -jar -Dserver.port=80 \
-    *.jar > /dev/null 2> /dev/null < /dev/null &
+java -jar /tmp/spring-cloud-inegration-0.0.1-SNAPSHOT.jar > /dev/null 2> /dev/null < /dev/null &

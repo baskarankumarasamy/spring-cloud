@@ -2,25 +2,21 @@ version: 0.0
 os: linux
 
 files:
-  - source: /
-    destination: /home/ec2-user/server
+  - source: /target/spring-cloud-inegration-0.0.1-SNAPSHOT.jar
+    destination: /tmp
 
-permissions:
-  - object: /
-    pattern: "**"
-    owner: ec2-user
-    group: ec2-user
+#permissions:
+ # - object: /
+  #  pattern: "**"
+   # owner: ec2-user
+   # group: ec2-user
 
 hooks:
   ApplicationStop:
-    - location: stop.sh
-      timeout: 20
-      runas: ec2-user
-  ApplicationStart:
-    - location: start.sh
-      timeout: 20
-      runas: ec2-user
-  ValidateService:
-    - location: validate.sh
-      timeout: 120
-      runas: ec2-user
+      - location: stop-process.sh
+        timeout: 180
+        runas: root
+    ApplicationStart:
+      - location: start-process.sh
+        timeout: 180
+        runas: root
