@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 
 files:
-  - source: /target/spring-cloud-inegration-0.0.1-SNAPSHOT.jar
+  - source: /spring-cloud-inegration-0.0.1-SNAPSHOT.jar
     destination: /tmp
 
 #permissions:
