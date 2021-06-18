@@ -30,6 +30,7 @@ class ApplicationControllerTest {
         MockitoAnnotations.initMocks(this);
         this.mvc =  MockMvcBuilders.standaloneSetup(applicationController).build();
     }
+    
 
     @Test
     public void testContextLoads(){
